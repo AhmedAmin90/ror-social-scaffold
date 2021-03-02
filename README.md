@@ -21,8 +21,7 @@ You could send friends invitations (Add button) and see the pending friends list
 
 ## Live Demo
 
-[Stay in touch](https://safe-citadel-65091.herokuapp.com/)
-
+[Stay in touch](https://serene-bayou-07957.herokuapp.com/)
 
 ## Getting Started
 
