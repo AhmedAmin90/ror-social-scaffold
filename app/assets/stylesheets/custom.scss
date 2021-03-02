@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,700,900&display=swap");
 
-$primary-color-dark: #689f38;
+$primary-color-dark: #689f38d0;
 $primary-color: #8bc34a;
 $primary-color-light: #dcedc8;
 $primary-color-text: #212121;
@@ -156,9 +156,9 @@ form {
       background-color: $primary-color-light;
     }
 
-    input[type="checkbox"] {
-      width: fit-content;
-    }
+    // input[type="checkbox"] {
+    //   width: fit-content;
+    // }
   }
 
   .actions {
@@ -279,10 +279,18 @@ form {
   width: 100%;
   margin: 10px;
 
+  .users-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5%;
+  }
+
   .users-list li {
     margin-bottom: 16px;
     text-transform: capitalize;
     font-size: 1.2em;
+    display: flex;
+    flex-direction: column;
   }
 
   .profile-link {
@@ -308,6 +316,31 @@ form {
     }
 
     justify-content: start;
+  }
+
+  .friendship {
+    margin: 10% 0;
+    display: flex;
+    flex-direction: column;
+
+    .h2 {
+      text-align: center;
+    }
+
+    .user-friends-list {
+      display: grid;
+      grid-template-columns: 20fr 1fr;
+    }
+
+    .friend-list {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    .waiting-list img {
+      width: 30px;
+      height: 30px;
+    }
   }
 }
 
@@ -346,4 +379,14 @@ form {
   .user-section {
     width: 50%;
   }
+}
+
+.button_to {
+  width: 100%;
+}
+
+.button-add-friend {
+  background-color: red;
+  width: 100px;
+  height: 100px;
 }
